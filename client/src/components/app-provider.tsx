@@ -25,7 +25,7 @@ export default function AppProvider({
     return (
         <QueryClientProvider client={queryClient}>
             {children}
-            <ReactQueryDevtools></ReactQueryDevtools>
+            <ReactQueryDevtools initialIsOpen={false}></ReactQueryDevtools>
         </QueryClientProvider>
     );
 }
